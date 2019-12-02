@@ -3,5 +3,7 @@ input.tfplan
 defaut allow = false
 
 allow { 
-  input.server_side_encryption_by_default = true
+  ressource_changes.server_side_encryption_by_default.rule.apply_server_side_encryption_by_default = "aws:kms"
   }
+
+"resource_changes"
